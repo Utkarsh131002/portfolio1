@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <h1><span>U</span>tkarsh</h1>
+          </div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Utkarsh</span><br />Patkar From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------about---------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/IMG20231124132539-removebg.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              "Welcome! I'm Utkarsh Patkar, web developer, I'm passionate about Coputer
+              Application. Skilled in html, css, javascript, react.js and java,
+              Let's connect and create something amazing together!".I am
+              enthusiastic person, a problem solver and a quick learner
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <!-- <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p> -->
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web App Interfaces</li>
+                <li><span>Web Developer</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios App
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - current</span><br />UI/UX Design Training at Et
+                  Institute
+                </li>
+                <li><span>2019-2021</span><br />Team lead at startApp LLC</li>
+                <li>
+                  <span>2017-2019</span><br />Internship at ekart eCommerce
+                </li>
+              </ul>
+            </div> -->
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-2024</span><br />Mater of Computer Application
+                </li>
+                <li>
+                  <span>2019-2022</span><br />Bachelor of Science(Computer
+                  Science)
+                </li>
+                <li><span>2018-2019</span><br />Intermediate</li>
+                <li><span>2016-2017</span><br />Matriculation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------services---------------- -->
+
+    <div id="service">
+      <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Crafting digital experiences that captivate and inspire. Let's
+              turn your vision into a pixel-perfect reality.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank"
+              >Learn more</a
+            >
+          </div>
+
+          <div>
+            <i class="fa-solid fa-gear"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Designing interfaces that seamlessly blend beauty and
+              functionality. Elevating user experiences one click at a time.
+            </p>
+            <a
+              href="https://en.wikipedia.org/wiki/User_interface_design"
+              target="_blank"
+              >Learn more</a
+            >
+          </div>
+
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>App Design</h2>
+            <p>
+              Creating intuitive app experiences that users love to navigate.
+              Transforming ideas into sleek, user-friendly interfaces.
+            </p>
+            <a
+              href="https://en.wikipedia.org/wiki/Application_development"
+              target="_blank"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------portfolio---------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Tic-Tac-Toe</h3>
+              <p>
+                Developed a web-based Tic-Tac-Toe game using HTML, CSS, and
+                JavaScript, featuring a responsive design and dynamic game logic
+                to handle player interactions and determine game outcomes.
+              </p>
+              <a href="https://utkarsh-tic-tac-toe.netlify.app" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Stone-Paper-Scissor</h3>
+              <p>
+                Developed a Rock-Paper-Scissors game using HTML, CSS, and
+                JavaScript, utilizing DOM manipulation and arrow functions for a
+                dynamic player vs. computer experience with selectable images
+                and random computer choices
+              </p>
+              <a
+                href="https://utkarsh-stone-paper-scissor.netlify.app"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>QR-Code Generator</h3>
+              <p>
+                Created a tool to generate custom QR codes for URLs, text, and contact info, allowing easy download and integration. Enhanced user accessibility and convenience.
+              </p>
+              <a href="https://utkarsh131002.github.io/qr/"
+              target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="#">See more</a>
+      </div>
+    </div>
+
+    <!-- -------------contact---------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>utkarsh.patkar77@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>9826542570</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/utkarsh.patkar.3"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/Utkarsh131002">
+                <i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/utkarshpatkar/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/utkarsh-patkar-a9678225a/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/Utkarsh CV1 (2).pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="110f278c-211f-425e-adab-018ee21b470b"
+              />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                id="message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Designed By <span style="color: #ff004f;">Utkarsh Patkar</span> |
+           <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
